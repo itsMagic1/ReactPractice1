@@ -1,0 +1,36 @@
+.nav {
+  width: 90%;
+  max-width: 100rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.5rem;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(20px);
+  z-index: 100;
+}
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: bold;
+  font-size: 1.5rem;
+}
+.links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.links li a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #6d6d6d;
+  font-size: 1.2rem;
+}
+.links li a:hover {
+  color: #4686fe;
+}

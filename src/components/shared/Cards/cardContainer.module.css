@@ -1,0 +1,26 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem 1rem;
+  padding: 0;
+}
+.cards div {
+  grid-column: span 2;
+}
+.cards div:nth-child(4) {
+  grid-column: 1 / span 3;
+}
+.cards div:nth-child(5) {
+  grid-column: 4 / -1;
+}
+@media screen and (max-width: 850px) {
+  .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .cards > div:nth-child(n) {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+}

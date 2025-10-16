@@ -1,0 +1,68 @@
+.container {
+  margin-top: var(--margin-l);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  overflow: hidden;
+}
+.figure {
+  height: 40rem;
+  width: 40rem;
+  margin: 4rem auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+  circle,
+  rgba(255, 255, 255, 0.1) 40%,
+  rgba(173, 205, 255, 0.8) 100%
+);
+  border-radius: 50rem;
+  position: relative;
+}
+.figure::after {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 60%;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background: linear-gradient(to top, #fff 80%, rgba(255, 255, 255, 0.4) 100%);
+}
+.circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  border-radius: 1.75rem;
+  transform: rotate(calc(36deg * var(--i))) translate(19.75rem);
+}
+@media screen and (max-width: 800px) {
+  .figure {
+    width: 30rem;
+    height: 30rem;
+  }
+  .box {
+    transform: rotate(calc(36deg * var(--i))) translate(16.75rem);
+  }
+}
+@media screen and (max-width: 450px) {
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+  .box {
+    transform: rotate(calc(36deg * var(--i))) translate(15.75rem);
+  }
+}

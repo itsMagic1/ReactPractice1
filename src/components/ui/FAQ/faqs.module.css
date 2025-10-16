@@ -1,0 +1,11 @@
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--margin-l);
+  gap: 2rem;
+}
