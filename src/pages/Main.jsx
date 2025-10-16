@@ -1,4 +1,4 @@
-import { LogoCarousel } from "../components/shared/logoCarousel/logoCarousel"
+import { LogoCarousel } from "../components/shared/logoCarousel/LogoCarousel"
 import { FAQS } from "../components/ui/FAQ/FAQS"
 import { Features } from "../components/ui/Features/Features"
 import { Hero } from "../components/ui/Hero/Hero"
