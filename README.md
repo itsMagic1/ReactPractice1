@@ -8,7 +8,7 @@ It focuses on **component design** and **UI animations**.
 ## Purpose
 
 The goal of this project is to improve my understanding of React’s component architecture,  
-state handling with `useState`, and how interactivity can be enhanced using CSS transitions and animation libraries like **GSAP**.
+state handling with `useState`, `useEffect`, `useRef`, and how interactivity can be enhanced using CSS transitions and animation libraries like **GSAP**.
 
 It also serves as a playground for experimenting with **responsive layouts**, **semantic structure**, and **reusable components**.
 
