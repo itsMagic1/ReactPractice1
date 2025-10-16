@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react"
 import { BaseCard } from "./BaseCard"
-import styles from './CardContainer.module.css'
+import styles from './cardContainer.module.css'
 
 export const CardContainer = ({ cards, animationFn, cols = null, rows = 'auto'}) => {
   const containerRef = useRef(null)
